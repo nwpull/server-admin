@@ -1,0 +1,237 @@
+// 暗色主题全局样式
+html.dark {
+  --el-bg-color: #141414;
+  --el-bg-color-overlay: #1f1f1f;
+  --el-bg-color-page: #0a0a0a;
+  --el-text-color-primary: #e5eaf3;
+  --el-text-color-regular: #cfd3dc;
+  --el-text-color-secondary: #a3a6ad;
+  --el-text-color-placeholder: #8d9095;
+  --el-border-color: #4c4d4f;
+  --el-border-color-light: #414243;
+  --el-border-color-lighter: #363637;
+  --el-border-color-extra-light: #2b2b2c;
+  --el-fill-color: #262727;
+  --el-fill-color-light: #1d1d1d;
+  --el-fill-color-lighter: #191919;
+  --el-fill-color-extra-light: #141414;
+  --el-fill-color-blank: #141414;
+  --el-mask-color: rgba(0, 0, 0, 0.8);
+  --el-card-bg-color: #262626;
+  --el-menu-bg-color: #1f1f1f;
+  --el-menu-hover-bg-color: #262626;
+  --el-menu-text-color: #bfcbd9;
+  --el-menu-active-color: #409eff;
+  --el-menu-item-height: 50px;
+}
+
+// 全局暗色样式
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #141414;
+  color: #e5eaf3;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+// 滚动条样式
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f1f1f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4c4d4f;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #636466;
+}
+
+// Element Plus 暗色覆盖
+.el-table {
+  --el-table-bg-color: #141414;
+  --el-table-tr-bg-color: #141414;
+  --el-table-header-bg-color: #1f1f1f;
+  --el-table-row-hover-bg-color: #262626;
+  --el-table-border-color: #4c4d4f;
+  --el-table-text-color: #e5eaf3;
+  --el-table-header-text-color: #cfd3dc;
+}
+
+.el-card {
+  --el-card-bg-color: #262626;
+  --el-card-border-color: #4c4d4f;
+}
+
+.el-dialog {
+  --el-dialog-bg-color: #262626;
+  --el-dialog-title-font-size: 18px;
+}
+
+.el-form-item__label {
+  color: #cfd3dc !important;
+}
+
+.el-input__wrapper,
+.el-textarea__inner,
+.el-select__wrapper {
+  background-color: #1f1f1f !important;
+  box-shadow: 0 0 0 1px #4c4d4f inset !important;
+}
+
+.el-input__inner,
+.el-textarea__inner {
+  color: #e5eaf3 !important;
+}
+
+.el-select-dropdown {
+  background-color: #262626 !important;
+  border-color: #4c4d4f !important;
+}
+
+.el-select-dropdown__item {
+  color: #e5eaf3 !important;
+}
+
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+  background-color: #1f1f1f !important;
+}
+
+.el-select-dropdown__item.selected {
+  color: #409eff !important;
+}
+
+.el-popper.is-light {
+  background-color: #262626 !important;
+  border-color: #4c4d4f !important;
+}
+
+.el-popper.is-light .el-popper__arrow::before {
+  background-color: #262626 !important;
+  border-color: #4c4d4f !important;
+}
+
+.el-dropdown-menu {
+  background-color: #262626 !important;
+  border-color: #4c4d4f !important;
+}
+
+.el-dropdown-menu__item {
+  color: #e5eaf3 !important;
+}
+
+.el-dropdown-menu__item:hover {
+  background-color: #1f1f1f !important;
+}
+
+.el-breadcrumb__inner {
+  color: #e5eaf3 !important;
+}
+
+.el-breadcrumb__separator {
+  color: #a3a6ad !important;
+}
+
+.el-tabs__item {
+  color: #a3a6ad !important;
+}
+
+.el-tabs__item.is-active {
+  color: #409eff !important;
+}
+
+.el-tabs__nav-wrap::after {
+  background-color: #4c4d4f !important;
+}
+
+.el-message-box {
+  background-color: #262626 !important;
+  border-color: #4c4d4f !important;
+}
+
+.el-message-box__title {
+  color: #e5eaf3 !important;
+}
+
+.el-message-box__message {
+  color: #cfd3dc !important;
+}
+
+// 进度条暗色
+.el-progress-bar__outer {
+  background-color: #1f1f1f !important;
+}
+
+// 分页暗色
+.el-pagination {
+  --el-pagination-bg-color: #1f1f1f;
+  --el-pagination-text-color: #e5eaf3;
+  --el-pagination-button-bg-color: #1f1f1f;
+  --el-pagination-hover-color: #409eff;
+}
+
+// Tag 暗色
+.el-tag {
+  --el-tag-bg-color: #262626;
+  --el-tag-border-color: #4c4d4f;
+  --el-tag-text-color: #e5eaf3;
+}
+
+// Popconfirm 暗色
+.el-popconfirm {
+  --el-popconfirm-bg-color: #262626;
+}
+
+// 工具类
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.ml-8 {
+  margin-left: 8px;
+}
+
+.mr-8 {
+  margin-right: 8px;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

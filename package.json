@@ -1,0 +1,18 @@
+{
+  "name": "server-admin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Linux 服务器 Web 运维管理平台",
+  "scripts": {
+    "dev:frontend": "pnpm --filter @server-admin/frontend dev",
+    "dev:backend": "pnpm --filter @server-admin/backend dev",
+    "dev": "pnpm run --parallel dev:frontend dev:backend",
+    "build:frontend": "pnpm --filter @server-admin/frontend build",
+    "build:backend": "pnpm --filter @server-admin/backend build",
+    "build": "pnpm run build:frontend && pnpm run build:backend"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
